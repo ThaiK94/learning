@@ -156,3 +156,12 @@ author;
 
 const updateBook = { ...book, author: "me!!!" }
 updateBook;
+
+const genre1 = book.genres;
+genre1;
+
+const addGenre = [... genre1, "romance"]
+addGenre;
+
+const updateBook1 = { ...book, genre : addGenre}
+updateBook1
