@@ -165,3 +165,7 @@ addGenre;
 
 const updateBook1 = { ...book, genre : addGenre}
 updateBook1
+
+const summary = `this is the author ${author}`;
+summary;
+
