@@ -148,24 +148,37 @@ function getBook(id) {
 const book = getBook(2);
 book;
 
-const {title, author } = book;
+const { title, author } = book;
 
 title;
 author;
 
-
-const updateBook = { ...book, author: "me!!!" }
+const updateBook = { ...book, author: "me!!!" };
 updateBook;
 
 const genre1 = book.genres;
 genre1;
 
-const addGenre = [... genre1, "romance"]
+const addGenre = [...genre1, "romance"];
 addGenre;
 
-const updateBook1 = { ...book, genre : addGenre}
-updateBook1
+const updateBook1 = { ...book, genre: addGenre };
+updateBook1;
 
 const summary = `this is the author ${author}`;
 summary;
 
+const listOfBook = getBooks();
+
+function getBooksPagesDetail() {
+  listOfBook.map((book) => {
+    book.pages > 1000
+      ? console.log(`${book.title} has ${book.pages} which is over 1000 pages`)
+      : console.log(
+          `${book.title} has ${book.pages} which is less then 1000 pages`,
+        );
+  });
+}
+
+
+getBooksPagesDetail();
