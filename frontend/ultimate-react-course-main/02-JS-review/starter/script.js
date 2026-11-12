@@ -144,7 +144,7 @@ function getBook(id) {
 }
 
 //destructuring
-
+/*
 const book = getBook(2);
 book;
 
@@ -182,3 +182,15 @@ function getBooksPagesDetail() {
 
 
 getBooksPagesDetail();
+
+*/
+
+console.log();
+
+fetch("https://jsonplaceholder.typicode.com/posts").then((res) => {
+  res.json().then((data) => {
+    console.log(data);
+  });
+});
+
+
