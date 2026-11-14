@@ -1,4 +1,4 @@
-import type { Pizza } from "../../../types/Pizza";
+import type { Pizza } from "../types/Pizza";
 
 type PizzaCardProp = {
   pizza: Pizza;
