@@ -15,7 +15,9 @@ public class SecurityConfig {
 
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) {
-        http.authorizeHttpRequests((requests) -> ((AuthorizeHttpRequestsConfigurer.AuthorizedUrl)requests.anyRequest()).authenticated());
+        http.authorizeHttpRequests((requests) -> ((AuthorizeHttpRequestsConfigurer.AuthorizedUrl)requests
+                .requestMatchers("/contact").permitAll()
+                .anyRequest()).authenticated());
         // http.formLogin(Customizer.withDefaults());
         http.httpBasic(Customizer.withDefaults());
         return (SecurityFilterChain)http.build();
