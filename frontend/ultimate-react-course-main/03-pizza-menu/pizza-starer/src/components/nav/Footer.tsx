@@ -6,6 +6,6 @@ export function Footer() {
 
   console.log(isOpen)
   return (
-    <footer>{new Date().toLocaleTimeString()}. We're currently Open!</footer>
+    <footer className="footer">{new Date().toLocaleTimeString()}. We're currently Open!</footer>
   );
 }
