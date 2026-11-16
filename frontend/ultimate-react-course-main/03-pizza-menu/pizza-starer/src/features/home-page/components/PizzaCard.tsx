@@ -6,11 +6,13 @@ type PizzaCardProp = {
 
 export function PizzaCard({ pizza }: PizzaCardProp) {
   return (
-    <div>
+    <div className="pizza">
       <img src={pizza.photoName} alt={pizza.name} />
-      <h3>{pizza.name}</h3>
-      <p>Ingredients: {pizza.ingredients}</p>
-      <p>Price: {pizza.price}</p>
+      <div className="">
+        <h3>{pizza.name}</h3>
+        <p>Ingredients: {pizza.ingredients}</p>
+        <span>Price: {pizza.price}</span>
+      </div>
     </div>
   );
 }
