@@ -1,4 +1,4 @@
-import { pizzaData } from "../../../data/data";
+import { pizzaData } from "../data/data";
 import { PizzaCard } from "./PizzaCard";
 
 export function Menu() {

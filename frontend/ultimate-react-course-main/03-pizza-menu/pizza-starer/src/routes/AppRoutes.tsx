@@ -1,7 +1,7 @@
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { MainLayout } from "../layouts/MainLayout";
-import { PizzaHomePage } from "../features/pizza/PizzaHomePage";
+import { PizzaHomePage } from "../features/home-page/PizzaHomePage";
 
 export function AppRoutes() {
   return (
