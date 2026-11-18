@@ -5,14 +5,16 @@ type PizzaCardProp = {
 };
 
 export function PizzaCard({ pizza }: PizzaCardProp) {
+  const isSoldOut : boolean = pizza.soldOut;
+
   return (
-    <div className="pizza">
+    <li className={`pizza ${isSoldOut ? "sold-out" : ""}`}>
       <img src={pizza.photoName} alt={pizza.name} />
       <div className="">
         <h3>{pizza.name}</h3>
         <p>Ingredients: {pizza.ingredients}</p>
-        <span>Price: {pizza.price}</span>
+        <span>Price: { isSoldOut ? 'Sold Out' : pizza.price}</span>
       </div>
-    </div>
+    </li>
   );
 }
