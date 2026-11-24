@@ -12,7 +12,10 @@ export function HomePage() {
 
   return (
     <>
-      <button className="close" onClick={() => setIsOpen((curState)=>!curState)}>
+      <button
+        className="close"
+        onClick={() => setIsOpen((curState) => !curState)}
+      >
         &times;
       </button>
       {isOpen && (
@@ -49,6 +52,6 @@ export function HomePage() {
   }
 
   function handleNext(): void {
-    step >= 3 ? setStep(0) : setStep((curStep)=> curStep+1);
+    step >= 3 ? setStep(0) : setStep((curStep) => curStep + 1);
   }
 }
