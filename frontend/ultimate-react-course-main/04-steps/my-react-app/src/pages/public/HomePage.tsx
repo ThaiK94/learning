@@ -12,7 +12,7 @@ export function HomePage() {
 
   return (
     <>
-      <button className="close" onClick={() => setIsOpen(!isOpen)}>
+      <button className="close" onClick={() => setIsOpen((curState)=>!curState)}>
         &times;
       </button>
       {isOpen && (
